@@ -8,7 +8,8 @@ pipeline {
  stages {
  stage('Cloning Git') {
  steps {
- git 'https://github.com/m0hamedAit/tp4devops'
+  git branch: 'main'
+  url: 'https://github.com/m0hamedAit/tp4devops.git"
  }
  }
  stage('Building image') {
